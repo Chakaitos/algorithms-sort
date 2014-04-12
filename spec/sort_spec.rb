@@ -55,7 +55,8 @@ describe 'Sort' do
       it "returns a sorted array that is the combination of the two" do
         a = [2, 6, 10, 26, 58, 89, 103]
         b = [1, 5, 11, 13, 15, 19, 60, 61, 62]
-        expect(Sort.merge(a, b)).to eq((a+b).sort)
+        result = (a+b).sort
+        expect(Sort.merge(a, b)).to eq(result)
       end
     end
   end
